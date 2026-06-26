@@ -3270,6 +3270,24 @@ func (device nvmlDevice) GetProcessesUtilizationInfo() (ProcessesUtilizationInfo
 	var processesUtilInfo ProcessesUtilizationInfo
 	processesUtilInfo.Version = STRUCT_VERSION(processesUtilInfo, 1)
 	ret := nvmlDeviceGetProcessesUtilizationInfo(device, &processesUtilInfo)
+	if ret != ERROR_INSUFFICIENT_SIZE {
+		return processesUtilInfo, ret
+	}
+
+	count := processesUtilInfo.ProcessSamplesCount
+	if count == 0 {
+		return processesUtilInfo, ret
+	}
+
+	infos := make([]ProcessUtilizationInfo_v1, count)
+	processesUtilInfo.ProcUtilArray = &infos[0]
+	processesUtilInfo.ProcessSamplesCount = count
+
+	var pinner runtime.Pinner
+	pinner.Pin(&infos[0])
+	defer pinner.Unpin()
+
+	ret = nvmlDeviceGetProcessesUtilizationInfo(device, &processesUtilInfo)
 	return processesUtilInfo, ret
 }
 
@@ -3358,6 +3376,24 @@ func (device nvmlDevice) GetVgpuProcessesUtilizationInfo() (VgpuProcessesUtiliza
 	var vgpuProcUtilInfo VgpuProcessesUtilizationInfo
 	vgpuProcUtilInfo.Version = STRUCT_VERSION(vgpuProcUtilInfo, 1)
 	ret := nvmlDeviceGetVgpuProcessesUtilizationInfo(device, &vgpuProcUtilInfo)
+	if ret != ERROR_INSUFFICIENT_SIZE {
+		return vgpuProcUtilInfo, ret
+	}
+
+	count := vgpuProcUtilInfo.VgpuProcessCount
+	if count == 0 {
+		return vgpuProcUtilInfo, ret
+	}
+
+	infos := make([]VgpuProcessUtilizationInfo_v1, count)
+	vgpuProcUtilInfo.VgpuProcUtilArray = &infos[0]
+	vgpuProcUtilInfo.VgpuProcessCount = count
+
+	var pinner runtime.Pinner
+	pinner.Pin(&infos[0])
+	defer pinner.Unpin()
+
+	ret = nvmlDeviceGetVgpuProcessesUtilizationInfo(device, &vgpuProcUtilInfo)
 	return vgpuProcUtilInfo, ret
 }
 
