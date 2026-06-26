@@ -1,0 +1,412 @@
+# /tmp/nvml-status
+
+GPU Node Status
+===============
+
+  System
+  ------
+    Driver version: 580.126.09
+    NVML version: 13.580.126.09
+    CUDA driver version: 13000
+    CUDA_VISIBLE_DEVICES: (not set)
+
+  Summary
+  -------
+    GPU count: 8
+
+------------------------------------------------------------------------
+  GPU 0
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-7ad8de11-f2e7-1ef4-3564-20ddf8982a22
+      PCI bus ID: 00000000:01:00.0
+      Minor number: 2
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 43%
+      Memory controller utilization: 24%
+      VRAM (v1)
+        Used: 6695MiB / 32607MiB (20.5%)
+        Free: 25911MiB
+      VRAM (v2)
+        Used: 6197MiB / 32607MiB (19.0%)
+        Reserved: 497MiB
+        Free: 25911MiB
+      Power draw: 110.7 W (limit 575.0 W)
+      Temperature: 51 C
+      Fan speed: 39%
+      Performance state: P1
+
+    Running processes (1)
+      PID 321631
+        VRAM: 6188MiB
+
+    Utilization samples (1)
+      PID 321631
+        SM: 9%
+        Memory: 4%
+        Encoder: 0%
+        Decoder: 0%
+
+    Utilization info samples (1)
+      PID 321631
+        SM: 8%
+        Memory: 4%
+        Encoder: 0%
+        Decoder: 0%
+        JPEG: 0%
+        OFA: 0%
+
+      (skipped GetMigMode: Not Supported)
+
+------------------------------------------------------------------------
+  GPU 1
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-ac820682-8786-e71a-ec89-958a91946921
+      PCI bus ID: 00000000:21:00.0
+      Minor number: 3
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 0%
+      Memory controller utilization: 0%
+      VRAM (v1)
+        Used: 6695MiB / 32607MiB (20.5%)
+        Free: 25911MiB
+      VRAM (v2)
+        Used: 6197MiB / 32607MiB (19.0%)
+        Reserved: 497MiB
+        Free: 25911MiB
+      Power draw: 108.2 W (limit 575.0 W)
+      Temperature: 44 C
+      Fan speed: 39%
+      Performance state: P1
+
+    Running processes (1)
+      PID 321632
+        VRAM: 6188MiB
+
+    Utilization samples (1)
+      PID 321632
+        SM: 8%
+        Memory: 3%
+        Encoder: 0%
+        Decoder: 0%
+
+    Utilization info samples (1)
+      PID 321632
+        SM: 7%
+        Memory: 3%
+        Encoder: 0%
+        Decoder: 0%
+        JPEG: 0%
+        OFA: 0%
+
+      (skipped GetMigMode: Not Supported)
+
+------------------------------------------------------------------------
+  GPU 2
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-ad24e15f-c973-7847-76d2-fff60cee8901
+      PCI bus ID: 00000000:41:00.0
+      Minor number: 1
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 0%
+      Memory controller utilization: 0%
+      VRAM (v1)
+        Used: 25903MiB / 32607MiB (79.4%)
+        Free: 6703MiB
+      VRAM (v2)
+        Used: 25405MiB / 32607MiB (77.9%)
+        Reserved: 497MiB
+        Free: 6703MiB
+      Power draw: 302.0 W (limit 575.0 W)
+      Temperature: 79 C
+      Fan speed: 87%
+      Performance state: P1
+
+    Running processes (1)
+      PID 186601
+        VRAM: 25396MiB
+
+    Utilization samples (1)
+      PID 186601
+        SM: 82%
+        Memory: 26%
+        Encoder: 0%
+        Decoder: 0%
+
+    Utilization info samples (1)
+      PID 186601
+        SM: 81%
+        Memory: 26%
+        Encoder: 0%
+        Decoder: 0%
+        JPEG: 0%
+        OFA: 0%
+
+      (skipped GetMigMode: Not Supported)
+
+------------------------------------------------------------------------
+  GPU 3
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-54be64e9-893b-ed11-013b-60485b121841
+      PCI bus ID: 00000000:61:00.0
+      Minor number: 0
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 0%
+      Memory controller utilization: 0%
+      VRAM (v1)
+        Used: 20792MiB / 32607MiB (63.8%)
+        Free: 11814MiB
+      VRAM (v2)
+        Used: 20294MiB / 32607MiB (62.2%)
+        Reserved: 497MiB
+        Free: 11814MiB
+      Power draw: 10.0 W (limit 575.0 W)
+      Temperature: 33 C
+      Fan speed: 39%
+      Performance state: P8
+
+    Running processes (2)
+      PID 8266
+        VRAM: 2730MiB
+      PID 9660
+        VRAM: 17550MiB
+
+    Utilization samples (0)
+      (none)
+
+    Utilization info samples (0)
+      (none)
+
+    (skipped GetMigMode: Not Supported)
+
+------------------------------------------------------------------------
+  GPU 4
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-2e3c778b-2656-6e54-4804-a843193f4dd0
+      PCI bus ID: 00000000:81:00.0
+      Minor number: 6
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 0%
+      Memory controller utilization: 2%
+      VRAM (v1)
+        Used: 498MiB / 32607MiB (1.5%)
+        Free: 32108MiB
+      VRAM (v2)
+        Used: 1MiB / 32607MiB (0.0%)
+        Reserved: 497MiB
+        Free: 32108MiB
+      Power draw: 17.6 W (limit 575.0 W)
+      Temperature: 31 C
+      Fan speed: 39%
+      Performance state: P8
+
+    Running processes (0)
+      (none)
+
+    Utilization samples (0)
+      (none)
+
+    Utilization info samples (0)
+      (none)
+
+    (skipped GetMigMode: Not Supported)
+
+------------------------------------------------------------------------
+  GPU 5
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-a3d36ae6-bdec-2cc2-975b-2bfc225f496f
+      PCI bus ID: 00000000:A1:00.0
+      Minor number: 7
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 0%
+      Memory controller utilization: 0%
+      VRAM (v1)
+        Used: 28829MiB / 32607MiB (88.4%)
+        Free: 3777MiB
+      VRAM (v2)
+        Used: 28331MiB / 32607MiB (86.9%)
+        Reserved: 497MiB
+        Free: 3777MiB
+      Power draw: 14.2 W (limit 575.0 W)
+      Temperature: 30 C
+      Fan speed: 40%
+      Performance state: P8
+
+    Running processes (1)
+      PID 112189
+        VRAM: 28322MiB
+
+    Utilization samples (0)
+      (none)
+
+    Utilization info samples (0)
+      (none)
+
+    (skipped GetMigMode: Not Supported)
+
+------------------------------------------------------------------------
+  GPU 6
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-e26ae4af-b81d-1791-b9e1-6e779c8e0268
+      PCI bus ID: 00000000:C1:00.0
+      Minor number: 5
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 0%
+      Memory controller utilization: 0%
+      VRAM (v1)
+        Used: 498MiB / 32607MiB (1.5%)
+        Free: 32108MiB
+      VRAM (v2)
+        Used: 1MiB / 32607MiB (0.0%)
+        Reserved: 497MiB
+        Free: 32108MiB
+      Power draw: 11.5 W (limit 575.0 W)
+      Temperature: 29 C
+      Fan speed: 39%
+      Performance state: P8
+
+    Running processes (0)
+      (none)
+
+    Utilization samples (0)
+      (none)
+
+    Utilization info samples (0)
+      (none)
+
+    (skipped GetMigMode: Not Supported)
+
+------------------------------------------------------------------------
+  GPU 7
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-a30fd35f-cb02-723f-3593-7421c69f9c32
+      PCI bus ID: 00000000:E1:00.0
+      Minor number: 4
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 0%
+      Memory controller utilization: 0%
+      VRAM (v1)
+        Used: 498MiB / 32607MiB (1.5%)
+        Free: 32108MiB
+      VRAM (v2)
+        Used: 1MiB / 32607MiB (0.0%)
+        Reserved: 497MiB
+        Free: 32108MiB
+      Power draw: 8.4 W (limit 575.0 W)
+      Temperature: 30 C
+      Fan speed: 39%
+      Performance state: P8
+
+    Running processes (0)
+      (none)
+
+    Utilization samples (0)
+      (none)
+
+    Utilization info samples (0)
+      (none)
+
+    (skipped GetMigMode: Not Supported)

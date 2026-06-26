@@ -1,0 +1,154 @@
+# nvidia-smi
+Fri Jun 26 04:28:56 2026
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.09             Driver Version: 580.126.09     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5090        On  |   00000000:01:00.0 Off |                  N/A |
+| 39%   47C    P1            107W /  575W |    6198MiB /  32607MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 5090        On  |   00000000:21:00.0 Off |                  N/A |
+| 39%   42C    P1             93W /  575W |    6198MiB /  32607MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            6912      C   python                                 6188MiB |
+|    1   N/A  N/A            6913      C   python                                 6188MiB |
++-----------------------------------------------------------------------------------------+
+
+
+# /tmp/nvml-status
+GPU Node Status
+===============
+
+  System
+  ------
+    Driver version: 580.126.09
+    NVML version: 13.580.126.09
+    CUDA driver version: 13000
+    CUDA_VISIBLE_DEVICES: (not set)
+
+  Summary
+  -------
+    GPU count: 2
+
+------------------------------------------------------------------------
+  GPU 0
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-7ad8de11-f2e7-1ef4-3564-20ddf8982a22
+      PCI bus ID: 00000000:01:00.0
+      Minor number: 2
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 43%
+      Memory controller utilization: 25%
+      VRAM (v1)
+        Used: 6695MiB / 32607MiB (20.5%)
+        Free: 25911MiB
+      VRAM (v2)
+        Used: 6197MiB / 32607MiB (19.0%)
+        Reserved: 497MiB
+        Free: 25911MiB
+      Power draw: 127.6 W (limit 575.0 W)
+      Temperature: 48 C
+      Fan speed: 39%
+      Performance state: P1
+
+    Running processes (1)
+      PID 6912
+        VRAM: 6188MiB
+
+    Utilization samples (1)
+      PID 6912
+        SM: 5%
+        Memory: 2%
+        Encoder: 0%
+        Decoder: 0%
+
+    Utilization info samples (1)
+      PID 6912
+        SM: 4%
+        Memory: 2%
+        Encoder: 0%
+        Decoder: 0%
+        JPEG: 0%
+        OFA: 0%
+
+      (skipped GetMigMode: Not Supported)
+
+------------------------------------------------------------------------
+  GPU 1
+  -----
+
+    Identity
+      Name: NVIDIA GeForce RTX 5090
+      UUID: GPU-ac820682-8786-e71a-ec89-958a91946921
+      PCI bus ID: 00000000:21:00.0
+      Minor number: 3
+      Brand: GeForce
+      MIG device handle: false
+
+    Capacity
+      Architecture: Architecture(10)
+      GPU cores: 21760
+    (skipped GetAttributes: Not Supported)
+      VRAM total (v1): 32607MiB
+      VRAM total (v2): 32607MiB
+
+    Usage
+      GPU utilization: 0%
+      Memory controller utilization: 0%
+      VRAM (v1)
+        Used: 6695MiB / 32607MiB (20.5%)
+        Free: 25911MiB
+      VRAM (v2)
+        Used: 6197MiB / 32607MiB (19.0%)
+        Reserved: 497MiB
+        Free: 25911MiB
+      Power draw: 96.7 W (limit 575.0 W)
+      Temperature: 42 C
+      Fan speed: 39%
+      Performance state: P1
+
+    Running processes (1)
+      PID 6913
+        VRAM: 6188MiB
+
+    Utilization samples (1)
+      PID 6913
+        SM: 4%
+        Memory: 1%
+        Encoder: 0%
+        Decoder: 0%
+
+    Utilization info samples (1)
+      PID 6913
+        SM: 3%
+        Memory: 1%
+        Encoder: 0%
+        Decoder: 0%
+        JPEG: 0%
+        OFA: 0%
+
+      (skipped GetMigMode: Not Supported)
